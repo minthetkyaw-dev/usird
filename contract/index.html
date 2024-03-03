@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("./happy-times-at-the-ikob.regular.ttf");
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        *{
+            font-family: "Happy Times At The IKOB";
+            font-size: 24px;
+        }
+        .title {
+            font-family: "Josefin Sans";
+            font-weight: bold;
+            font-size: 36px;
+            text-align: center;
+        }
+        .footer {
+            font-family: "Josefin Sans";
+            font-weight: bold;
+            font-size: 22px;
+            text-align: center;
+        }
+        .center {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .line {
+            width: 95%;
+            height: 8px;
+            background-color: black;
+        }
+        body {
+            margin: auto;
+        }
+        .page {
+            display: none;
+        }
+        input, textarea {
+            display: block;
+            padding: 5px 10px;
+            margin: 10px 15px;
+            border-radius: 10px;
+            border: 1px solid silver;
+        }
+        button {
+            background: grey;
+            border: none;
+            color: white;
+            padding: 10px 30px;
+            margin: auto;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media print {
+            .line{
+                display: block;
+                visibility: visible;
+            }
+            body{
+                width: 100%;
+            }
+            .form{
+                display: none;
+            }
+            .page{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form class="form" style="margin-top: 100px;">
+        <h1 style="letter-spacing: 3px; font-weight: 500; font-size: 30px;">Contract Form</h1>
+        
+        <input type="text" placeholder="name" id="name" />
+        <input type="text" placeholder="phone" id="phone" />
+        <textarea type="text" placeholder="addr" id="addr" ></textarea>
+        <input type="text" placeholder="email" id="email" />
+
+        <button onclick="work(event)">Click</button>
+    </form>
+
+
+    <!-- page 1 -->
+
+    <div class="page">
+        <div class="header">
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center" style="opacity: 0;">hi </div>
+
+            <div class="title">US IMMIGRATION & RESETTLEMENT DIRECTIVE</div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center"> DOS ID: 7158807 </div>
+    
+            <div class="center"> 405 Lexington Ave. 26th Fl, New York, NY 10174 </div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <hr style="font-weight: bold; height: 5px; background-color: black;">
+            <div class="center" style="opacity: 0;">hi </div>
+            <span style="font-size: 40px; text-align: center; display: block;">Immigration Assistance Service Contract</span>
+        </div>
+        <div>
+    
+        </div>
+        <pre>
+    
+
+
+    <span style="font-size: 30px;">PROVIDER INFORMATION</span>
+    
+    Provider Name: USIRD Inc.
+    Provider Address: 405 Lexington Ave. 26th Fl, New York, NY 10174
+    Provider Telephone Number: (646) 698-2775
+    Provider eMail Address: immigration@usird.org
+    Contract completed for provider by: Ye Yint Myint Mo, Immigration Service Provider
+    
+    <span style="font-size: 30px;">CUSTOMER INFORMATION</span>
+            
+    Name: <span class="name1"></span>
+    Telephone Number: <span class="phone"></span>
+    Address: <span class="addr"></span>
+    eMail Address: <span class="email"></span>
+    
+    <span style="font-size: 30px;">SERVICES PROVIDER WILL PERFORM</span>
+    
+    Service: Complete I-589 Application for Asylum and Withholding of Removal Form
+    Labor Fee: 1000 USD
+    Provider will complete by: <span class="finish"></span>
+    
+    Amount due: 500 USD       Date Due: <span class="today1"></span>
+    Amount due: 500 USD       Date Due: Biometric Appointment Letter Notice Date
+    
+    Total: 1000 USD 
+    Provider MAY NOT charge you for any services it does not perform or costs it does not pay 
+    on your behalf.
+
+    
+
+
+
+    
+    Page 1 of 6
+    Customer Initials: _____ Employee Initials: _____
+    
+    </pre>
+        <div class="footer">
+            (+1) 646 . 698 . 2775 | immigration@usird.org | usird.org
+        </div>
+
+    </div>
+
+    <div style="page-break-after: always;"></div>
+
+    <!-- page 2 -->
+
+    <div class="page">
+        <div class="header">
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center" style="opacity: 0;">hi </div>
+
+            <div class="title">US IMMIGRATION & RESETTLEMENT DIRECTIVE</div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center"> DOS ID: 7158807 </div>
+    
+            <div class="center"> 405 Lexington Ave. 26th Fl, New York, NY 10174 </div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <hr style="font-weight: bold; height: 5px; background-color: black;">
+            <div class="center" style="opacity: 0;">hi </div>
+            <span style="font-size: 40px; text-align: center; display: block;">Immigration Assistance Service Contract</span>
+        </div>
+        <div>
+    
+        </div>
+        <pre>
+    
+    You may cancel this contract at any time.
+
+    Cancellation within three (3) business days of signing contract:
+
+    • Provider may not charge you any fee and must return any money you paid within 15 days of 
+    cancellation.
+
+    • Exception: If you waived the right to cancel without fee because you are about to lose eligibility or another
+    right or privilege, Provider may keep fees you paid for services that Provider performed, as well as any
+    additional amount Provider paid on your behalf.
+
+    Cancellation more than three (3) days after signing contract:
+
+    • Provider may keep fees you paid for services that Provider performed, as well as any additional amount
+    Provider paid on your behalf. 
+
+
+    <span style="font-size: 30px;">ADDITIONAL TERMS - IMPORTANT</span>
+
+    1. The individual providing assistance to you under this contract is not an attorney licensed to practice law or
+    accredited by the United States Department of Justice to provide representation to you before the federal
+    government or any immigration authority and may not give legal advice or accept fees for legal advice.
+    For a free legal referral, call the Office for New Americans hotline at 1-800-566-7636, the New York State
+    Attorney General at 1-800-771-7755, or your local district attorney or prosecutor.
+
+    2. Provider may not keep original documents that you submit with your application for an immigration-related
+    benefit made to any governmental entity even if you owe Provider money or Provider claims you owe
+    money.
+
+    3. Provider must give you a copy of each document it prepares for you.
+
+    4. If you need to get any supporting documents for any application, you may get these documents yourself.
+    You do not need to get them through Provider. The U.S. government provides information on required
+    forms and documentation for free online at uscis.gov and by phone at 1-800-870-3676.
+    
+    
+    Page 2 of 6
+    Customer Initials: _____ Employee Initials: _____
+
+    </pre>
+        <div class="footer">
+            (+1) 646 . 698 . 2775 | immigration@usird.org | usird.org
+        </div>
+
+    </div>
+
+    <div style="page-break-after: always;"></div>
+
+    <!-- page 3 -->
+
+    <div class="page">
+        <div class="header">
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center" style="opacity: 0;">hi </div>
+
+            <div class="title">US IMMIGRATION & RESETTLEMENT DIRECTIVE</div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center"> DOS ID: 7158807 </div>
+    
+            <div class="center"> 405 Lexington Ave. 26th Fl, New York, NY 10174 </div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <hr style="font-weight: bold; height: 5px; background-color: black;">
+            <div class="center" style="opacity: 0;">hi </div>
+            <span style="font-size: 40px; text-align: center; display: block;">Immigration Assistance Service Contract</span>
+        </div>
+        <div>
+    
+        </div>
+        <pre>
+    
+    5. The individual providing assistance to you under this contract is prohibited from disclosing any of your 
+    personal information to, or submitting any forms or documents on your behalf with, immigration or other 
+    authorities without your knowledge and consent except as required by law.
+
+    6. A copy of all forms completed and documents accompanying the forms shall be kept by Provider for three 
+    years. A copy of your file shall be provided to you on demand and without fee.
+    
+    7. Provider must give you a signed form affirming receipt of each original document, as well as a 
+    complete copy of such document. Provider must give this form to you immediately upon taking possession 
+    of the original document.
+    
+    8. Provider must promptly notify you in writing when it has disclosed any information to, or submitted 
+    any form or document with, immigration or other authorities when such disclosure was required by law and 
+    done without your knowledge and consent.
+    
+    
+    <span style="font-size: 30px">NOTICE OF RIGHT TO CANCEL</span>
+    
+    • You may cancel this contract at any time. You have three (3) business days to cancel this contract without 
+    penalty and get back any fees that you have already paid. Notice of cancellation may be made by completing 
+    the cancellation form included in this contract or by otherwise notifying Provider in writing and delivering 
+    such form or notification to Provider in person or by United States mail to (specify address). If you cancel 
+    this contract, you will get back any documents you submitted to Provider.
+    
+    • If you cancel this contract within three (3) business days, you will get back your documents and any fees 
+    that you paid.
+    
+
+
+
+
+
+
+
+
+    
+    Page 3 of 6
+    Customer Initials: _____ Employee Initials: _____
+
+    </pre>
+        <div class="footer">
+            (+1) 646 . 698 . 2775 | immigration@usird.org | usird.org
+        </div>
+
+    </div>
+
+    <div style="page-break-after: always;"></div>
+
+    <!-- page 4 -->
+
+    <div class="page">
+        <div class="header">
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center" style="opacity: 0;">hi </div>
+
+            <div class="title">US IMMIGRATION & RESETTLEMENT DIRECTIVE</div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center"> DOS ID: 7158807 </div>
+    
+            <div class="center"> 405 Lexington Ave. 26th Fl, New York, NY 10174 </div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <hr style="font-weight: bold; height: 5px; background-color: black;">
+            <div class="center" style="opacity: 0;">hi </div>
+            <span style="font-size: 40px; text-align: center; display: block;">Immigration Assistance Service Contract</span>
+        </div>
+        <div>
+    
+        </div>
+        <pre>
+    
+    <span style="font-size: 30px;">ACCEPTANCE OF CONTRACT</span>
+
+    The individual providing assistance to you under the terms of this contract must explain 
+    the contents of this contract to you and answer any questions you may have regarding the 
+    terms of this contract. I approve of the services, fees, and costs stated in this contract. 
+    I authorize Provider to do the work as specified. 
+    
+    
+    
+    
+    _______________
+    Customer: <span class="name2"></span>
+    Date: <span class="today2"></span>
+    
+    
+    
+    
+    _______________
+    Provider Representative
+    Date: <span class="today3"></span>
+    
+    
+    NOTICE TO CUSTOMER - READ BEFORE SIGNING
+    
+    Do not sign this contract before you have read it or if any spaces are left blank. Provider must 
+    give you a signed copy of this contract, free of charge, immediately after you sign it.
+    
+    Important: If you are entitled to a refund and provider does not give you a refund within 15 days or 
+    if you have a complaint or need more information, call 3-1-1.
+    
+
+
+
+
+
+    
+    Page 4 of 6
+    Customer Initials: _____ Employee Initials: _____
+
+    </pre>
+        <div class="footer">
+            (+1) 646 . 698 . 2775 | immigration@usird.org | usird.org
+        </div>
+
+    </div>
+
+    <div style="page-break-after: always;"></div>
+
+    <!-- page 5 -->
+
+    <div class="page">
+        <div class="header">
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center" style="opacity: 0;">hi </div>
+
+            <div class="title">US IMMIGRATION & RESETTLEMENT DIRECTIVE</div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center"> DOS ID: 7158807 </div>
+    
+            <div class="center"> 405 Lexington Ave. 26th Fl, New York, NY 10174 </div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <hr style="font-weight: bold; height: 5px; background-color: black;">
+            <div class="center" style="opacity: 0;">hi </div>
+            <span style="font-size: 40px; text-align: center; display: block;">Immigration Assistance Service Contract</span>
+        </div>
+        <div>
+    
+        </div>
+        <pre>
+    
+    <span style="font-size: 30px">CANCELLATION FORM</span>
+
+    Important Note Concerning Cancellation:
+    
+    • You may cancel this contract at any time.
+    
+    Cancellation within three (3) business days of signing contract:
+    
+    • Provider may not charge you any fee and must return any money you paid within 15 days 
+    of cancellation.
+    • Exception: If you waived the right to cancel without fee because you are about to lose 
+    eligibility or another right or privilege, Provider may keep fees you paid for services that 
+    Provider performed, as well as any additional amount Provider paid on your behalf.
+    
+    Cancellation more than three (3) days after signing contract:
+    
+    • Provider may keep fees you paid for services that Provider performed, as well as any 
+    additional amount the Provider paid on your behalf.
+    
+    
+    
+    
+    
+    Signature:
+    Print Name:
+    Date:
+    
+    I hereby cancel the contract of <span class="today4"></span> between  USIRD Inc. 405 Lexington Ave. 26th Fl, 
+    New York NY 10174, phone number (646) 698-2775 and <span class="name3"></span>.
+    
+
+
+
+
+
+    
+    Page 5 of 6
+    Customer Initials: _____ Employee Initials: _____
+
+    </pre>
+        <div class="footer">
+            (+1) 646 . 698 . 2775 | immigration@usird.org | usird.org
+        </div>
+
+    </div>
+
+    <div style="page-break-after: always;"></div>    
+
+    <!-- page 6 -->
+
+    <div class="page">
+        <div class="header">
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center" style="opacity: 0;">hi </div>
+
+            <div class="title">US IMMIGRATION & RESETTLEMENT DIRECTIVE</div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <div class="center"> DOS ID: 7158807 </div>
+    
+            <div class="center"> 405 Lexington Ave. 26th Fl, New York, NY 10174 </div>
+            <div class="center" style="opacity: 0;">hi </div>
+            <hr style="font-weight: bold; height: 5px; background-color: black;">
+            <div class="center" style="opacity: 0;">hi </div>
+            <span style="font-size: 40px; text-align: center; display: block;">Immigration Assistance Service Contract</span>
+        </div>
+        <div>
+    
+        </div>
+        <pre>
+    
+    <span style="font-size: 30px;">IMMIGRATION ASSISTANCE SERVICE CONTRACT</span>
+    <span style="font-size: 30px;">TRANSLATION ACCURACY AFFIRMATION</span>
+    
+    Name of Immigration Service Provider: USIRD Inc.
+    Immigration Service Provider Address: 405 Lexington Ave. 26th Fl, New York, NY 10174
+    Immigration Service Provider Telephone Number: (646) 698-2775
+    Immigration Service Provider eMail Address: immigration@usird.org
+    Name of Translator: Oak Soe Khant
+    Name of Customer: <span class="name4"></span>
+    
+    The translator named above affirms the following:
+    
+    1. I translated the contract provided by the Immigration Service Provider for the Customer named above
+    into Burmese language on <span class="today5"></span>.
+    
+    2. I affirm that the translation I provided to the customer was complete and accurate.
+    
+    
+    
+    
+
+    Signature:
+    Print Name:
+    Date:
+    
+
+
+
+
+
+
+
+
+
+
+    
+    Page 6 of 6
+    Customer Initials: _____ Employee Initials: _____
+
+    </pre>
+        <div class="footer">
+            (+1) 646 . 698 . 2775 | immigration@usird.org | usird.org
+        </div>
+
+    </div>
+
+    <div style="page-break-after: always;"></div>    
+
+</body>
+<script>
+ 
+    function work(e) {
+        e.preventDefault();
+        
+        let name = document.getElementById("name").value;
+        document.querySelector(".name1").innerHTML=name;
+        document.querySelector(".name2").innerHTML=name;
+        document.querySelector(".name3").innerHTML=name;
+        document.querySelector(".name4").innerHTML=name;
+        
+        let months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        let date = new Date();
+        let today = `${months[date.getUTCMonth()]} ${date.getDate()}, ${date.getUTCFullYear()}`;
+        
+        document.querySelector(".today1").innerHTML=today;
+        document.querySelector(".today2").innerHTML=today;
+        document.querySelector(".today3").innerHTML=today;
+        document.querySelector(".today4").innerHTML=today;
+        document.querySelector(".today5").innerHTML=today;
+    
+        let phone = document.getElementById("phone").value;
+        document.querySelector(".phone").innerHTML=`(${phone.slice(0,3)}) ${phone.slice(3,6)}-${phone.slice(6,10)}`;
+    
+        let email = document.getElementById("email").value;
+        document.querySelector(".email").innerHTML=email;
+    
+        let addr = document.getElementById("addr").value;
+        document.querySelector(".addr").innerHTML=addr;
+    
+        if(date.getUTCMonth!=11){
+            let finish = `${months[date.getUTCMonth()+1]} ${date.getDate()}, ${date.getUTCFullYear()}`;
+            document.querySelector(".finish").innerHTML=finish;
+        } else {
+            let finish = `${months[1]} ${date.getDate()}, ${date.getUTCFullYear()+1}`;
+            document.querySelector(".finish").innerHTML=finish;
+        }
+
+        print();
+        document.location.reload();
+    }
+</script>
+</html>
