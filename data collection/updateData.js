@@ -3,16 +3,41 @@ const readlineSync = require('readline-sync');
 const XLSX = require('xlsx');
 
 // Fixed array of questions
-const questions = ["A-Number","SSN","USCIS Account Number","Last Name","First Name","Middle Name","Other Names","Current Address","Mailing Address","Gender","Marital Status","Date of Birth","City of Birth","Country of Birth","Present Nationality","Nationality at Birth","Race","Religion","Immigration proceeding status","Last Leave country","I94","List entry to US","Passport Issue Country","Passport Number","Expiration Date","Native Language","Fluent in English","Other Languages"
-];
+const questions = ["A-Number","SSN","USCIS Account Number","Last Name","First Name","Middle Name","Other Names","Current Address","Mailing Address","Gender","Marital Status","Date of Birth","City of Birth","Country of Birth","Nationality","Religion","Last Leave country","List entry to US: Date","List entry to US: i94","List entry to US: Place","List entry to US: Visa Category","List entry to US: Status Expire","Passport Number","Passport Expiration Date"];
+const lists = ["Address","Employment", "Education"];
 
 // Function to prompt user for input and store answers
-function getUserAnswers(questions) {
+function getUserAnswers(questions, lists) {
     const answers = {};
     questions.forEach(question => {
         const answer = readlineSync.question(`Enter ${question}: `);
         answers[question] = answer;
+        if(question == "A-Number" && answer == "") {
+            answers[question] = "N/A"
+        }
+        if(question == "SSN" && answer == "") {
+            answers[question] = "N/A"
+        }
+        if(question == "USCIS Account Number" && answer == "") {
+            answers[question] = "N/A"
+        }
+        if(question == "City of Birth" && answer == "") {
+            answers[question] = "Yangon"
+        }
+        if(question == "Country of Birth" && answer == "") {
+            answers[question] = "Myanmar"
+        }
+        if(question == "Religion" && answer == "") {
+            answers[question] = "Buddhism"
+        }
+        if(question == "Nationality" && answer == "") {
+            answers[question] = "Burmese"
+        }
     });
+    lists.forEach(list => {
+        const answer = readlineSync.question(`Enter ${list}: `);
+        answers[list] = `[${answer}]`; 
+    })
     return answers;
 }
 
@@ -34,7 +59,7 @@ function convertJSONtoXLSX() {
 
 // Main function
 function main() {
-    const answers = getUserAnswers(questions);
+    const answers = getUserAnswers(questions, lists);
     updateJSONFile(answers);
     convertJSONtoXLSX();
     console.log('Data updated and saved successfully.');
