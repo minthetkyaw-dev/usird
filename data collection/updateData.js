@@ -37,7 +37,7 @@ function getUserAnswers(questions, lists) {
     lists.forEach(list => {
         const answer = readlineSync.question(`Enter ${list}: `);
         answers[list] = `[${answer}]`; 
-    })
+    });
     return answers;
 }
 
@@ -48,14 +48,28 @@ function updateJSONFile(answers) {
     fs.writeFileSync('data.json', JSON.stringify(jsonData, null, 2));
 }
 
+// // Function to convert JSON to XLSX and save
+// function convertJSONtoXLSX() {
+//     const jsonData = JSON.parse(fs.readFileSync('data.json'));
+//     const ws = XLSX.utils.json_to_sheet(jsonData);
+//     const wb = XLSX.utils.book_new();
+//     XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
+//     XLSX.writeFile(wb, 'output.xlsx');
+// }
+
 // Function to convert JSON to XLSX and save
 function convertJSONtoXLSX() {
     const jsonData = JSON.parse(fs.readFileSync('data.json'));
-    const ws = XLSX.utils.json_to_sheet(jsonData);
     const wb = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
+    
+    jsonData.forEach((data, index) => {
+        const ws = XLSX.utils.json_to_sheet([data]);
+        XLSX.utils.book_append_sheet(wb, ws, `Client${index.toString().padStart(4,"0")}`);
+    });
+    
     XLSX.writeFile(wb, 'output.xlsx');
 }
+
 
 // Main function
 function main() {
